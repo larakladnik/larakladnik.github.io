@@ -1,2 +1,2 @@
 # Readme
-Spletna stran je [tukaj](https://lara.kladnik.github.io)
+Spletna stran je [tukaj](https://larakladnik.github.io)

@@ -3,7 +3,7 @@ body {
     text-align: center;
     padding: 66px;
     background-color: #3372bb;/* This will make the background blue */
-    color: white; /* Change text color to white */
+    color: #202443; /* Change text color to white */
 }
 
 #toggleBtn {

@@ -10,12 +10,12 @@ Dodaj omejitev števila poskusov in prikaži sporočilo "Konec igre", ko je omej
 
 ## TODO
 
--[ ] Ustvari osnovno strukturo HTML:
-    -[ ] Dodaj vnosno polje za ugibanje številke.
-    -[ ] Dodaj gumb za potrditev ugibanja.
-    -[ ] Dodaj mesto za prikaz sporočil ("Previsoko!", "Prenizko!").
+- [ ] Ustvari osnovno strukturo HTML:
+    - [ ] Dodaj vnosno polje za ugibanje številke.
+    - [ ] Dodaj gumb za potrditev ugibanja.
+    - [ ] Dodaj mesto za prikaz sporočil ("Previsoko!", "Prenizko!").
 
--[ ] Oblikuj osnovno postavitev s CSS:
+- [ ] Oblikuj osnovno postavitev s CSS:
     -[ ] Stiliziraj vnosno polje in gumb.
     -[ ] Postavi elemente na sredino strani z uporabo Flexbox ali druge metode.
 

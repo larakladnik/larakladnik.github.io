@@ -1,7 +1,10 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     padding: 20px;
+    background-color: blue; /* This will make the background blue */
+    color: white; /* Change text color to white */
 }
 
 #toggleBtn {

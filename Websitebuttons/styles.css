@@ -12,6 +12,7 @@ body {
     cursor: crosshair;
     margin-bottom: 20px;
     background-color: #78c1e1;
+    font-family: 'Kalam', sans-serif;
 }
 
 #output img {

@@ -1,86 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Toggle Button with Image</title>
-  <style>
-    #output {
-      margin-top: 20px;
-    }
-    img {
-      width: 300px;
-      height: 300px;
-    }
-    .button {
-      margin: 10px;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Toggle Button</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Click the Button ⤵️🤓</h1>
+    <button id="toggleBtn">Click Me</button>
+    <div id="output"></div>
 
-  <!-- Buttons -->
-  <button class="button" id="toggleBtn1">Button 1</button>
-  <button class="button" id="toggleBtn2">Button 2</button>
-  <button class="button" id="toggleBtn3">Button 3</button>
-
-  <!-- Output area for displaying images or other content -->
-  <div id="output"></div>
-
-  <script>
-    // Define the buttons and the output area
-    const button1 = document.getElementById('toggleBtn1');
-    const button2 = document.getElementById('toggleBtn2');
-    const button3 = document.getElementById('toggleBtn3');
-    const output = document.getElementById('output');
-    
-    // Separate click counters for each button
-    let clickCount1 = 0;
-    let clickCount2 = 0;
-    let clickCount3 = 0;
-
-    // Event listener for Button 1
-    button1.addEventListener('click', () => {
-        clickCount1++;
-        if (clickCount1 === 1) {
-            output.innerHTML = `<img src="Slike/Slika1.jpg">`;
-        } else if (clickCount1 === 2) {
-            output.innerHTML = `<img src="Slike/Slika2.jpg">`;
-        } else if (clickCount1 === 3) {
-            output.innerHTML = `<p>Hello from Button 1</p>`;
-            clickCount1 = 0; // Reset the counter after the third click
-        }
-    });
-
-    // Event listener for Button 2
-    button2.addEventListener('click', () => {
-        clickCount2++;
-        if (clickCount2 === 1) {
-            output.innerHTML = `<img src="Slike/Slika3.jpg">`;
-        } else if (clickCount2 === 2) {
-            output.innerHTML = `<img src="Slike/Slika4.jpg">`;
-        } else if (clickCount2 === 3) {
-            output.innerHTML = `<p>Hello from Button 2</p>`;
-            clickCount2 = 0; // Reset the counter after the third click
-        }
-    });
-
-    // Event listener for Button 3
-    button3.addEventListener('click', () => {
-        clickCount3++;
-        if (clickCount3 === 1) {
-            output.innerHTML = `<img src="Slike/Slika5.jpg">`;
-        } else if (clickCount3 === 2) {
-            output.innerHTML = `<img src="Slike/Slika6.jpg">`;
-        } else if (clickCount3 === 3) {
-            output.innerHTML = `<p>Hello from Button 3</p>`;
-            clickCount3 = 0; // Reset the counter after the third click
-        }
-    });
-  </script>
-  
+    <script src="script.js"></script>
 </body>
 </html>

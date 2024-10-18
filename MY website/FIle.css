@@ -1,0 +1,77 @@
+
+/* Set a blue background for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3498db; /* Light blue background */
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style the gallery to arrange images in a grid */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+/* Style the thumbnail images */
+.thumbnail {
+    width: 1200px; /* Set width to 1200px */
+    height: 630px; /* Set height to 630px */
+    cursor: pointer;
+    border-radius: 5px; /* Slightly rounded corners for images */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    object-fit: cover; /* Ensures the images maintain aspect ratio */
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds shadow effect on hover */
+}
+
+/* Modal styles for enlarged images */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Center the enlarged image inside the modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+/* Close button styling */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1280px) {
+    .thumbnail {
+        width: 100%; /* Adjusts to full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
